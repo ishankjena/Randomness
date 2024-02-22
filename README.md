@@ -10,3 +10,14 @@ How do we code Randomness ?
 
 
 ## Pseudo Random Number Generator
+* Also called Deterministic random numer generator
+* utilizes a deterministic algorithm to generate a sequence of numbers whose properties 
+  approximate the properties of sequences of random numbers.
+* The PRNG-generated sequence is not truly random, because it is completely determined by an 
+  initial value, called the PRNG's seed (which may include truly random values).
+* important in practice for their speed in number generation and their reproducibility.
+
+### Linear Congruential Generators
+* simple approach to generate pseudo random numbers.
+* The generator is defined by the recurrence relation:
+  X~n+1~ = (aX~n~ + c) mod m
