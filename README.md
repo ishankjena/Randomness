@@ -27,32 +27,22 @@ How do we code Randomness ?
         c is "increment"<br>
         X<sub>0</sub> is "seed" value<br>
 * [Code]()
+
 <table>
-| C++ 11's minstd_rand | 2<sup>31</sup>-1 | 48271 | 0 |
-| Java's java.util.Random | 2<sup>48</sup> | 25214903917<br>(5DEECE66D16) | 11 |
-</table>
-<table>
-  <th>
-    Implementation 
-  </th>
-  <th>
-    modulus: m
-  </th>
-  <th>
-    increment: c
-  </th>
-  <th>
-    multiplier: a
-  </th>
+  <th>Implementation </th>
+  <th>modulus: m</th>
+  <th>increment: c</th>
+  <th>multiplier: a</th>
   <tr>
-    <td width="33%"">
-      The quick brown fox jumps over the lazy dog.
-    </td>
-    <td width="33%">
-      The quick brown fox jumps over the lazy dog.
-    </td>
-    <td width="33%">
-      The quick brown fox jumps over the lazy dog.
-    </td>
+    <td>C++ 11's minstd_rand</td>
+    <td>2<sup>31</sup>-1</td>
+    <td>48271</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Java's java.util.Random</td>
+    <td>2<sup>48</sup></td>
+    <td>25214903917</td>
+    <td>11</td>
   </tr>
 </table>
