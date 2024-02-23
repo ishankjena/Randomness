@@ -28,6 +28,6 @@ How do we code Randomness ?
         X<sub>0</sub> is "seed" value<br>
 * [Code]()
 
-* |Implementation|modulus: m|multiplier: a|increment: c|
-  |C++ 11's minstd_rand|2<sup>31</sup>-1|48271|0|
-  |Java's java.util.Random|2<sup>48</sup>|25214903917<br>(5DEECE66D16)|11|
+* | Implementation | modulus: m | multiplier: a | increment: c |
+  | C++ 11's minstd_rand | 2<sup>31</sup>-1 | 48271 | 0 |
+  | Java's java.util.Random | 2<sup>48</sup> | 25214903917<br>(5DEECE66D16) | 11 |
