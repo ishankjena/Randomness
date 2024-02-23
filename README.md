@@ -22,7 +22,8 @@ How do we code Randomness ?
 * The generator is defined by the recurrence relation:<br>
   X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m<br>
   where,
-        m is "modulus"
-        a is "multiplier"
-        c is "increment"
-        X<sub>0</sub> is "seed" value
+        m is "modulus"<br>
+        a is "multiplier"<br>
+        c is "increment"<br>
+        X<sub>0</sub> is "seed" value<br>
+* [Code]()
