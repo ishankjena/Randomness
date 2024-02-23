@@ -21,7 +21,7 @@ How do we code Randomness ?
 * simple approach to generate pseudo random numbers.
 * The generator is defined by the recurrence relation:<br>
   <p align="center">
-  <strong>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</strong><br>
+  <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
         m is "modulus"<br>
         a is "multiplier"<br>
         c is "increment"<br>
