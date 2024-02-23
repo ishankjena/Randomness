@@ -20,7 +20,7 @@ How do we code Randomness ?
 ### Linear Congruential Generators
 * simple approach to generate pseudo random numbers.
 * The generator is defined by the recurrence relation:<br>
-  X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m<br>
+  <strong>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</strong><br>
   where,
         m is "modulus"<br>
         a is "multiplier"<br>
