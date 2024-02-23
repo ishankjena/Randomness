@@ -20,14 +20,12 @@ How do we code Randomness ?
 ### Linear Congruential Generators
 * simple approach to generate pseudo random numbers.
 * The generator is defined by the recurrence relation:<br>
-  <p align="center">
   <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
         m is "modulus"<br>
         a is "multiplier"<br>
         c is "increment"<br>
         X<sub>0</sub> is "seed" value<br>
-  </p>
-* [Code]()
+* [Python Code]()
 
 <table>
   <th>Implementation </th>
