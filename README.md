@@ -25,7 +25,7 @@ How do we code Randomness ?
         a is "multiplier"<br>
         c is "increment"<br>
         X<sub>0</sub> is "seed" value<br>
-* [Python Code]()
+* [Python Code](../lcgrandom.py)
 
 <table>
   <th>Implementation </th>
