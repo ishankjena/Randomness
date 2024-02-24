@@ -48,14 +48,26 @@ How do we code Randomness ?
 
 ### 2. xorshift128+
 
-
+From Javascript's v8 engine official source code:
+```C++
+static inline void XorShift128(uint64_t* state0, uint64_t* state1) {
+    uint64_t s1 = *state0;
+    uint64_t s0 = *state1;
+    *state0 = s0;
+    s1 ^= s1 << 23;
+    s1 ^= s1 >> 17;
+    s1 ^= s0;
+    s1 ^= s0 >> 26;
+    *state1 = s1;
+  }
+```
 <hr>
 
 ## Random() funtion in progamming languages
-<details>
-<summary>Javascript</summary>
-  <p>
-    * JS doesn’t do anything, it’s up to the browser
-    * Most browsers use an algorithm called xorshift128+
-  </p>
-</details>
+
+1. Javascript
+   * Math.Random() implementation depends on engine (browser).
+   * v8 uses xorshift128+
+2. Python
+3. Java
+4. C++
