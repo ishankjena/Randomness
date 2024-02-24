@@ -15,7 +15,7 @@ How do we code Randomness ?
 * Important in practice for their speed in number generation and their reproducibility.
 
 ### PRNG Algorithms
-1. ### Linear Congruential Generators
+1. Linear Congruential Generators
    The generator is defined by the recurrence relation:<br>
    <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
         m is "modulus"<br>
@@ -44,7 +44,6 @@ How do we code Randomness ?
     </tr>
   </table>
     These combinations of values are most suitable for getting long <i>periods</i> (steps before which LCG funtion loops).
+    <br>
 
-2. ### xorshift128+
-   hello
-
+2. xorshift128+
