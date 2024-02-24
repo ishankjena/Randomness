@@ -10,7 +10,7 @@ How do we code Randomness ?
 ## Pseudo (Deterministic) RNG
 * Utilizes a deterministic algorithm to generate a sequence of numbers whose properties 
   approximate the properties of sequences of random numbers.
-* The PRNG-generated sequence is <b>not truly random</b>, because it is completely determined by an 
+* The PRNG-generated sequence is <b><i>not truly random</i></b>, because it is completely determined by an 
   initial value, called the PRNG's <b><i>seed</i></b> (which may include truly random values).
 * Important in practice for their speed in number generation and their reproducibility.
 
