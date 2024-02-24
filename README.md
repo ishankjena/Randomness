@@ -22,7 +22,9 @@ How do we code Randomness ?
         a is "multiplier"<br>
         c is "increment"<br>
         X<sub>0</sub> is "seed" value<br>
+   
    [Python Code](lcgrandom.py)
+
    <table>
     <th>Implementation </th>
     <th>modulus: m</th>
@@ -44,4 +46,5 @@ How do we code Randomness ?
     These combinations of values are most suitable for getting long <i>periods</i> (steps before which LCG funtion loops).
 
 2. ### xorshift128+
+   hello
 
