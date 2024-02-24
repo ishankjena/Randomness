@@ -47,3 +47,15 @@ How do we code Randomness ?
     <br>
 
 ### 2. xorshift128+
+
+
+<hr>
+
+## Random() funtion in progamming languages
+<details>
+<summary>Javascript</summary>
+  <p>
+    * JS doesn’t do anything, it’s up to the browser
+    * Most browsers use an algorithm called xorshift128+
+  </p>
+</details>
