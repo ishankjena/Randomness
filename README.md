@@ -16,33 +16,32 @@ How do we code Randomness ?
 
 ### PRNG Algorithms
 1. ### Linear Congruential Generators
-  The generator is defined by the recurrence relation:<br>
-    <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
+   The generator is defined by the recurrence relation:<br>
+   <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
         m is "modulus"<br>
         a is "multiplier"<br>
         c is "increment"<br>
         X<sub>0</sub> is "seed" value<br>
-  [Python Code](lcgrandom.py)
-
-<table>
-  <th>Implementation </th>
-  <th>modulus: m</th>
-  <th>increment: c</th>
-  <th>multiplier: a</th>
-  <tr>
-    <td>C++ 11's minstd_rand</td>
-    <td>2<sup>31</sup>-1</td>
-    <td>48271</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Java's java.util.Random</td>
-    <td>2<sup>48</sup></td>
-    <td>25214903917</td>
-    <td>11</td>
-  </tr>
-</table>
-  These combinations of values are most suitable for getting long <i>periods</i> (steps before which LCG funtion loops).
+   [Python Code](lcgrandom.py)
+   <table>
+    <th>Implementation </th>
+    <th>modulus: m</th>
+    <th>increment: c</th>
+    <th>multiplier: a</th>
+    <tr>
+      <td>C++ 11's minstd_rand</td>
+      <td>2<sup>31</sup>-1</td>
+      <td>48271</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Java's java.util.Random</td>
+      <td>2<sup>48</sup></td>
+      <td>25214903917</td>
+      <td>11</td>
+    </tr>
+  </table>
+    These combinations of values are most suitable for getting long <i>periods</i> (steps before which LCG funtion loops).
 
 2. ### xorshift128+
 
