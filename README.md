@@ -1,13 +1,13 @@
 # Randomness
 How do we code Randomness ?
 
-## Hardware RNG (Non-Deterministic/True/Physical)
+## Hardware (Non-Deterministic/True/Physical) RNG
 * Generates random numbers from a physical process capable of producing entropy (in other words, the device always has access to a physical entropy source)
 * Nature provides ample phenomena that generate low-level, statistically random "noise" signals, including thermal and shot noise, jitter and metastability of electronic circuits, Brownian motion, atmospheric noise, radioactive decay.
   Noise source > analog signals > digitizer > bit stream > conditioner(extractor) > random number
 <hr>
 
-## Pseudo Random Number Generator (Deterministic)
+## Pseudo (Deterministic) RNG
 * Utilizes a deterministic algorithm to generate a sequence of numbers whose properties 
   approximate the properties of sequences of random numbers.
 * The PRNG-generated sequence is <b>not truly random</b>, because it is completely determined by an 
