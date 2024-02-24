@@ -1,13 +1,13 @@
 # Randomness
 How do we code Randomness ?
 
-##1. Hardware random number generator
+## Hardware random number generator
 * hardware/true/non-deterministic/physical random number generator
 * generates random numbers from a physical process capable of producing entropy (in other words, the device always has access to a physical entropy source)
 * Nature provides ample phenomena that generate low-level, statistically random "noise" signals, including thermal and shot noise, jitter and metastability of electronic circuits, Brownian motion, atmospheric noise.
 
   Noise source > analog signals > digitizer > bit stream > conditioner(extractor) > random number
-
+<hr>
 
 ## Pseudo Random Number Generator
 * Also called Deterministic random numer generator
@@ -17,7 +17,8 @@ How do we code Randomness ?
   initial value, called the PRNG's seed (which may include truly random values).
 * important in practice for their speed in number generation and their reproducibility.
 
-### Linear Congruential Generators
+### PRNG Algorithms
+### 1. Linear Congruential Generators
 * simple approach to generate pseudo random numbers.
 * The generator is defined by the recurrence relation:<br>
   <h4>X<sub>n+1</sub> = (aX<sub>n</sub> + c) mod m</h4><br>
@@ -45,3 +46,7 @@ How do we code Randomness ?
     <td>11</td>
   </tr>
 </table>
+* these combinations of values are most suitable for getting long <i>periods</i> (steps before which LCG funtion loops).
+
+### 2. xorshift128+
+
